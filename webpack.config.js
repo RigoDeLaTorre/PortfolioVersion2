@@ -1,13 +1,14 @@
-
 const path = require('path');
 const webpack = require('webpack')
 
 const VENDOR_LIBS = [
-  'babel-polyfill', 'redux', 'react-redux', 'react-dom'
+  'redux', 'react-redux', 'react-dom'
 ]
 
 module.exports = {
   entry: {
+    firstComp: './assets/js/firstComp/firstComp.js',
+    vendor: VENDOR_LIBS
   },
   output: { filename: '[name].js',
             path: path.resolve(__dirname, 'public/js/components') },

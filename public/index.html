@@ -5,19 +5,19 @@
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/main.css">
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <link rel="stylesheet" href="/css/animate.css">
   </head>
   <body>
     <section id="home">
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <div class="headline">
+      <div class="headline animated bounce">
         <h1>Front-End Developer</h1>
         <h2>Rigo De La Torre</h2>
         <div class="button-container">
@@ -27,32 +27,38 @@
       </div>
     </section>
     <section id ="projects-section">
-        <div class="projects-section-container">
+        <div class="projects-section-container wow fadeIn slow" data-wow-delay=".5s">
             <h1>Projects</h1>
           <div class="projects-container">
             <div class="project">
               <div class="project-img">
+                <img src = "./img/newCenturyInvestment/main.png" />
+              </div>
+              <div class="details">React App for real-estate broker to display listings with a custom mortgage calculator.</div>
+              <a href ="/newCenturyInvestment.html">  <div class="hover-over"><img src="./img/boy.svg"></div></a>
+            </div>
+            <div class="project" onclick="gotoSite(newCenturyInvestmentRealty)">
+              <div class="project-img">
                 <img src = "https://images.pexels.com/photos/1181255/pexels-photo-1181255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
               </div>
               <div class="details">Lorem aute irure dolor qui officia deserunt mollit anim id est laborum. Lorem aute irure dolor qui officia deserunt mollit anim id est laborum.</div>
+              <div class="hover-over"></div>
+                <div class="hover-over"><img src="./img/boy.svg"></div>
             </div>
             <div class="project">
               <div class="project-img">
                 <img src = "https://images.pexels.com/photos/1181255/pexels-photo-1181255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
               </div>
               <div class="details">Lorem aute irure dolor qui officia deserunt mollit anim id est laborum. Lorem aute irure dolor qui officia deserunt mollit anim id est laborum.</div>
+              <div class="hover-over"></div>
+                <div class="hover-over"><img src="./img/boy.svg"></div>
             </div>
             <div class="project">
               <div class="project-img">
                 <img src = "https://images.pexels.com/photos/1181255/pexels-photo-1181255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
               </div>
               <div class="details">Lorem aute irure dolor qui officia deserunt mollit anim id est laborum. Lorem aute irure dolor qui officia deserunt mollit anim id est laborum.</div>
-            </div>
-            <div class="project">
-              <div class="project-img">
-                <img src = "https://images.pexels.com/photos/1181255/pexels-photo-1181255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
-              </div>
-              <div class="details">Lorem aute irure dolor qui officia deserunt mollit anim id est laborum. Lorem aute irure dolor qui officia deserunt mollit anim id est laborum.</div>
+              <div class="hover-over"><img src="./img/boy.svg"></div>
             </div>
           </div>
         </div>
@@ -61,28 +67,28 @@
       <div class="skills-section-container">
         <h1>Skills</h1>
             <div class="skills-container">
-              <div class="skills languages">
+              <div class="skills languages wow fadeInLeft slow" data-wow-delay=".5s">
                 <div class="icon-container">
                   <img src="./img/language.svg" alt="">
                   <h3>Languages</h3>
                 </div>
                 <h4>html, css, javascript</h4>
               </div>
-              <div class="skills libraries">
+              <div class="skills libraries wow fadeInLeft slow">
                 <div class="icon-container">
                   <img src="./img/library.svg" alt="">
                   <h3>Libraries / Frameworks</h3>
                 </div>
-                <h4>Sass, bootstrap, flexbox, cssgrid, Jquery, React, Express, AdonisJS, Node </h4>
+                <h4>Sass, bootstrap, flexbox, cssgrid, Jquery, React, Redux, Node, ExpressJS, AdonisJS,  </h4>
               </div>
-              <div class="skills version-control">
+              <div class="skills version-control wow fadeInRight slow">
                 <div class="icon-container">
                   <img src="./img/remote-control.svg" alt="">
                   <h3>Version-Control</h3>
                 </div>
                 <h4>Git </h4>
               </div>
-              <div class="skills database">
+              <div class="skills database wow fadeInRight slow">
                 <div class="icon-container">
                   <img src="./img/database.svg" alt="">
                   <h3>Databases</h3>
@@ -93,5 +99,54 @@
           </div>
       </div>
     </section>
+    <section id ="about">
+          <div class="about-section-container">
+            <h1>About</h1>
+            <div class ="about-section wow fadeInUp slow">
+              <div class="info">
+                <p>Hi, if your here you want to know a little of my background...</p><br>
+                <p>I actually started long ago, when I was 13 years old. I would copy and tweak websites out and I even started generating add revenue from banner adds ! But life as a kid got in the way and I stopped.</p><br>
+                <p>I saw the WSOP on tv in one day, and I began my journey in poker for about 10 years. I played online poker professionally for 7 years, but due to some regulations I was forced to move on. I found programming again, it sparked a passion that sometimes causes me to sleep at 4am :). I have an immense thirst to aquire as much knowledge from front-end to back-end to design....I love it all.</p><br>
+              </div>
+              <div class="img">
+                <img src="./img/wsop.jpg" alt="">
+
+              </div>
+
+          </div>
+
+          </div>
+    </section>
+<section id ="contact">
+  <div class="contact-section-container">
+    <h1>Contact</h1>
+    <div class="contact-container">
+      <div class="contact wow rubberBand slow" data-wow-delay=".5s">
+        <h2>Email: rigo.webdev@gmail.com</h2>
+        <h2>Phone: 555-555-5555</h2>
+      </div>
+      <div class="icons">
+        <img src="./img/logos/github-sign.svg" alt="">
+        <img src="./img/logos/linkedin.svg" alt="">
+        <img src="./img/logos/email.svg" alt="">
+        <!-- <img src="./img/logos/email-black.svg" alt="">
+        <img src="./img/logos/email-black.svg" alt="">
+        <img src="./img/logos/email-black.svg" alt=""> -->
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+	var scroll = new SmoothScroll('a[href*="#"]');
+function gotoSite(site){
+  console.log(site)
+}
+
+</script>
   </body>
 </html>
