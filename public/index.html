@@ -21,8 +21,8 @@
         <h1>Front-End Developer</h1>
         <h2>Rigo De La Torre</h2>
         <div class="button-container">
-          <button>Projects</button>
-          <button>Contact</button>
+          <a href = "#projects-section">Projects</a>
+          <a href = "#contact">Contact</a>
         </div>
       </div>
     </section>
@@ -30,20 +30,24 @@
         <div class="projects-section-container wow fadeIn slow" data-wow-delay=".5s">
             <h1>Projects</h1>
           <div class="projects-container">
-            <div class="project">
+              <div class="project" onclick="gotoSite(newCenturyInvestmentRealty)">
               <div class="project-img">
                 <img src = "./img/newCenturyInvestment/main.png" />
               </div>
-              <div class="details">React App for real-estate broker to display listings with a custom mortgage calculator.</div>
+              <div class="details">
+                <h2>ZoilaMoscoso.com</h2>
+                <p>React App for real-estate broker to display listings with a custom mortgage calculator.</p></div>
               <a href ="/newCenturyInvestment.html">  <div class="hover-over"><img src="./img/boy.svg"></div></a>
             </div>
-            <div class="project" onclick="gotoSite(newCenturyInvestmentRealty)">
+            <div class="project" >
               <div class="project-img">
-                <img src = "https://images.pexels.com/photos/1181255/pexels-photo-1181255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+                <img src = "./img/findThatMovie/website.png" />
               </div>
-              <div class="details">Lorem aute irure dolor qui officia deserunt mollit anim id est laborum. Lorem aute irure dolor qui officia deserunt mollit anim id est laborum.</div>
-              <div class="hover-over"></div>
-                <div class="hover-over"><img src="./img/boy.svg"></div>
+              <div class="details">
+                <h2>FindThatMovie.tv</h2>
+                <p>React/Redux app to search movies, tv shows, actors, and get all the details from ratings to the cast.</p>
+              </div>
+              <a href ="/findThatMovie.html">  <div class="hover-over"><img src="./img/boy.svg"></div></a>
             </div>
             <div class="project">
               <div class="project-img">
@@ -105,8 +109,8 @@
             <div class ="about-section wow fadeInUp slow">
               <div class="info">
                 <p>Hi, if your here you want to know a little of my background...</p><br>
-                <p>I actually started long ago, when I was 13 years old. I would copy and tweak websites out and I even started generating add revenue from banner adds ! But life as a kid got in the way and I stopped.</p><br>
-                <p>I saw the WSOP on tv in one day, and I began my journey in poker for about 10 years. I played online poker professionally for 7 years, but due to some regulations I was forced to move on. I found programming again, it sparked a passion that sometimes causes me to sleep at 4am :). I have an immense thirst to aquire as much knowledge from front-end to back-end to design....I love it all.</p><br>
+                <p>I actually started long ago, when I was 13 years old. No knowledge of actual coding, just using Dreamweaver and Frontpage98 I built some sites and I even started generating add revenue from banner adds. But life as a kid got in the way and I stopped when I entered High School.</p><br>
+                <p>I saw the WSOP on tv one day, and I began my journey. I played poker for about 10 years. Professionally for 7 years, but due to some regulations I was forced to move on. <br><br>I found programming again down the road, and it sparked a passion that sometimes causes me to sleep at 4am :). I have an immense thirst to aquire as much knowledge from front-end to back-end to design....I love it all.</p><br>
               </div>
               <div class="img">
                 <img src="./img/wsop.jpg" alt="">
@@ -126,9 +130,9 @@
         <h2>Phone: 555-555-5555</h2>
       </div>
       <div class="icons">
-        <img src="./img/logos/github-sign.svg" alt="">
-        <img src="./img/logos/linkedin.svg" alt="">
-        <img src="./img/logos/email.svg" alt="">
+        <a href="https://github.com/RigoDeLaTorre"><img src="./img/logos/github-sign.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/rigodlt/"><img src="./img/logos/linkedin.svg" alt=""></a>
+        <a href="mailto:rigo.webdev@gmail.com"><img src="./img/logos/email.svg" alt=""></a>
         <!-- <img src="./img/logos/email-black.svg" alt="">
         <img src="./img/logos/email-black.svg" alt="">
         <img src="./img/logos/email-black.svg" alt=""> -->
@@ -141,12 +145,11 @@
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
-new WOW().init();
-	var scroll = new SmoothScroll('a[href*="#"]');
-function gotoSite(site){
-  console.log(site)
+new WOW().init()
+var scroll = new SmoothScroll('a[href*="#"]')
+function gotoSite(site) {
+	console.log(site)
 }
-
 </script>
   </body>
 </html>
