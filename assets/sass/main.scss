@@ -2,6 +2,9 @@
 @import 'reset';
 @import 'variables';
 
+* {
+	box-sizing: border-box;
+}
 body {
 	font-family: 'Roboto', sans-serif;
 	// background: #dfdfdf;
@@ -17,6 +20,30 @@ body {
 	background-repeat: no-repeat;
 	color: white;
 	height: 100vh;
+	@media only screen and (max-width: 767px) {
+		.headline {
+			h1 {
+				font-size: 1rem !important;
+			}
+			h2 {
+				font-size: 0.9rem !important;
+			}
+		}
+		li {
+			padding: 15px !important;
+			font-size: 0.9rem;
+		}
+	}
+	@media only screen and (min-width: 768px) and (max-width: 1000px) {
+		.headline {
+			h1 {
+				font-size: 3rem !important;
+			}
+			h2 {
+				font-size: 1.5rem !important;
+			}
+		}
+	}
 
 	nav {
 		background: linear-gradient(
@@ -127,6 +154,12 @@ body {
 #projects-section {
 	background: #f2eeee;
 	padding: 5rem 0;
+	@media only screen and (max-width: 768px) {
+		padding: 5rem 2rem !important;
+		.projects-container {
+			grid-template-columns: repeat(1, 1fr) !important;
+		}
+	}
 
 	.projects-section-container {
 		max-width: 1600px;
@@ -147,7 +180,7 @@ body {
 			padding: 5rem 0;
 			display: grid;
 			grid-gap: 25px;
-			grid-template-columns: repeat(4, 1fr);
+			grid-template-columns: repeat(3, 1fr);
 
 			.project {
 				position: relative;
@@ -216,6 +249,15 @@ body {
 #skills-section {
 	background: #05152d;
 	color: orange;
+	@media only screen and (max-width: 768px) {
+		.skills-section-container {
+			padding: 5rem 2rem !important;
+			max-width: 100% !important;
+			h4 {
+				font-size: 0.9rem !important;
+			}
+		}
+	}
 
 	.skills-section-container {
 		margin: 0 auto;
@@ -297,6 +339,22 @@ body {
 
 #about {
 	background: #f2eeee;
+	@media only screen and (max-width: 1024px) {
+		.about-section-container {
+			padding: 5rem 2rem !important;
+			max-width: 100% !important;
+		}
+		.about-section {
+			flex-direction: column !important;
+		}
+
+		.img {
+			display: none !important;
+		}
+		p {
+			max-width: 100% !important;
+		}
+	}
 	.about-section-container {
 		padding: 5rem 0;
 		max-width: 60%;
@@ -346,6 +404,15 @@ body {
 		max-width: 60%;
 		margin: 0 auto;
 
+		@media only screen and (max-width: 1024px) {
+			padding: 5rem 2rem !important;
+			max-width: 100% !important;
+			.contact-container {
+				flex-direction: column;
+				align-items: center !important;
+			}
+		}
+
 		h1 {
 			font-size: 2rem;
 			font-weight: 300;
@@ -385,10 +452,10 @@ body {
 	.title {
 		text-align: center;
 		padding: 2rem 0;
-		a{
+		a {
 			text-decoration: none;
-			color:white;
-			font-size:2rem;
+			color: white;
+			font-size: 2rem;
 		}
 		img {
 			max-width: 300px;
