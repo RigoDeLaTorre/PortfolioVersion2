@@ -44,10 +44,18 @@
 	overflow: hidden;
 	flex-basis: 300px;
 	margin: 1rem;
+	transition:$transition;
+
 	&:hover {
+		// background:#0e1826;
 		box-shadow: $boxshadow;
 		top: 0;
-		opacity: 0.5;
+	    transform: scale(1.1);
+		// .project__details{
+		// 			color: white;
+		// }
+
+
 	}
 
 	&__imgContainer {
