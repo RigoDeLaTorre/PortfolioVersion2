@@ -9,33 +9,33 @@
   </head>
   <body>
     <section id="nav-projects">
-      <nav>
-        <ul>
-          <li><a href="/#home">Home</a></li>
-          <li><a href="/#projects-section">Projects</a></li>
-          <li><a href="/#contact">Contact</a></li>
-          <li><a href="/RigoDeLaTorre-resume.pdf" download>Resume</a></li>
+      <nav class="nav-projects">
+        <ul class="nav-projects__list">
+          <li class="nav-projects__list-item"><a class="nav-projects__list-item__link" href="/#home">Home</a></li>
+          <li class="nav-projects__list-item"><a class="nav-projects__list-item__link" href="/#projects-section">Projects</a></li>
+          <li class="nav-projects__list-item"><a class="nav-projects__list-item__link" href="/#contact">Contact</a></li>
+          <li class="nav-projects__list-item"><a class="nav-projects__list-item__link" href="/RigoDeLaTorre-resume.pdf" download>Resume</a></li>
         </ul>
       </nav>
     </section>
     <section id ="project-details">
-      <div class="title">
-        <a href ="https://truckingbuddy.herokuapp.com/" target="_blank">Trucking Buddy- Logistics App</a>
+      <div class="project-details__title">
+        <a class="project-details__link" href ="https://truckingbuddy.herokuapp.com/" target="_blank">Trucking Buddy- Logistics App</a>
       </div>
       <div class="project-details-container">
-          <h1>Overview</h1>
+          <h1 class="project-details-container__h1">Overview</h1>
           <div class="project-container">
-            <div class="description wow fadeIn slower">
-              <p>This is a logistics app for the trucking industry. <br>You have the ability to either use my login or create a new company profile, where you will be able to add drivers, customers, loads.<br>
+              <div class="project-details__descriptionContainer wow fadeIn slow">
+              <p class="project-details__description">This is a logistics app for the trucking industry. <br>You have the ability to either use my login or create a new company profile, where you will be able to add drivers, customers, loads.<br>
               The forms are built with redux-forms and have field validation as well as normalization.</p>
               <br>
               <p>Please be patient, as its hosted on Heroku. Takes about 15 seconds for the server to "wake up".</p>
               <br>
             </div>
-            <div class="image-section wow fadeIn slower">
-              <a href="https://truckingbuddy.herokuapp.com/" target="_blank"><img src = "./img/motorlinesApp/main.png" /></a>
-              <div class="more-details">
-                <a href="https://truckingbuddy.herokuapp.com/" target="_blank">Visit Project</a>
+              <div class="project-details__imgSection wow fadeIn slower">
+              <a href="https://truckingbuddy.herokuapp.com/" target="_blank"><img class="project-details__imgSection__img" src = "./img/motorlinesApp/main.png" /></a>
+                <div class="project-details__moreDetails">
+                <a class="project-details__moreDetails__link"href="https://truckingbuddy.herokuapp.com/" target="_blank">Visit Project</a>
                 <!-- <a href="https://github.com/RigoDeLaTorre/truckLogisticsApp" target="_blank">View Code</a> -->
               </div>
             </div>
@@ -96,27 +96,22 @@
 
 
 
-<section id ="contact">
-  <div class="contact-section-container">
-    <h1>Contact</h1>
-    <div class="contact-container">
-      <div class="contact">
-        <h2>Email: rigo.webdev@gmail.com</h2>
-        <h2>Phone: 530-628-7690</h2>
-      </div>
-      <div class="icons">
-        <a href="https://github.com/RigoDeLaTorre/" target="_blank"><img src="./img/logos/github-sign.svg" alt=""></a>
-          <a href="https://www.linkedin.com/in/rigodlt/" target="_blank"><img src="./img/logos/linkedin.svg" alt=""></a>
-          <a href="mailto:rigo.webdev@gmail.com?subject=Hi I found your website.." target="_blank"><img src="./img/logos/email.svg" alt=""></a>
-        <!-- <img src="./img/logos/email-black.svg" alt="">
-        <img src="./img/logos/email-black.svg" alt="">
-        <img src="./img/logos/email-black.svg" alt=""> -->
-      </div>
-    </div>
-
-  </div>
-
-</section>
+    <section id ="contact" class="contact-section">
+       <div class="contact-section__container container">
+          <h1 class="contact-section__title">Contact</h1>
+          <div class="contact">
+             <div class="contact__container wow rubberBand slow" data-wow-delay=".7s">
+                <h2 class="contact__h2">Email: rigo.webdev@gmail.com</h2>
+                <h2 class="contact__h2">Phone: 530-628-7690</h2>
+             </div>
+             <div class="contact__iconContainer">
+                <a href="https://github.com/RigoDeLaTorre"><img class="contact__icon" src="./img/logos/github-sign.svg" alt="github"></a>
+                <a href="https://www.linkedin.com/in/rigodlt/"><img class="contact__icon" src="./img/logos/linkedin.svg" alt="linkedin"></a>
+                <a href="mailto:rigo.webdev@gmail.com"><img class="contact__icon" src="./img/logos/email.svg" alt="email"></a>
+             </div>
+          </div>
+       </div>
+    </section>
 <script src="js/wow.min.js"></script>
 <script>
 new WOW().init()

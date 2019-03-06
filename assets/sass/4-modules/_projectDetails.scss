@@ -1,0 +1,91 @@
+#project-details {
+	background: #05152d;
+	color: #dbdbdb;
+
+  .project-details-container {
+    padding: 5rem 0;
+    max-width: 60%;
+    margin: 0 auto;
+    &__h1{
+      font-size: 2rem;
+      font-weight: 300;
+      display: inline;
+      padding: 10px 0;
+      border-bottom: 1px solid black;
+      color: white;
+    }
+
+    .project-container {
+      margin-top: 2rem;
+      display: flex;
+      @media only screen and (max-width: 1300px) {
+          display: block !important;
+        .project-details__moreDetails__link {
+          font-size: 0.8rem !important;
+        }
+      }
+
+    }
+  }
+
+
+  .project-details{
+    &__title{
+      text-align: center;
+      padding: 2rem 0;
+    }
+    &__link{
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+    }
+    &__img{
+          max-width: 300px;
+    }
+    &__descriptionContainer{
+      flex: 2;
+      line-height: 1.5;
+    }
+    &__description{
+      		max-width: 400px;
+    }
+    &__imgSection{
+      		flex: 1;
+          &__img{
+            width: 100%;
+            box-shadow: $boxshadow;
+            border-radius: 3px;
+            transition: $transition;
+            cursor: pointer;
+
+            &:hover {
+              transform: scale(1.5);
+            }
+          }
+    }
+    &__moreDetails{
+      		margin-top: 2rem;
+          &__link{
+            text-decoration: none;
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid #424f58;
+            color: #36424b;
+            font-weight: 500;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            &:hover {
+              background: #ff9a20;
+              color: white;
+              transition: $transition;
+            }
+          }
+    }
+
+
+  }
+
+
+
+}

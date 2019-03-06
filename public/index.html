@@ -32,7 +32,7 @@
       </section>
       <section id ="projects-section" className="projects-section">
          <div class="container wow fadeIn slow" data-wow-delay=".5s">
-            <h1 class="project__h1">Projects</h1>
+            <h1 class="projects-section__title">Projects</h1>
             <div class="projects-container">
                <div class="project" onclick="location.href='/truckingBuddyApp.html'">
                   <div class="project__imgContainer">
@@ -121,32 +121,30 @@
             </div>
          </div>
       </section>
-      <section id ="personal-section">
-         <div class="projects-section container wow fadeIn slow" data-wow-delay=".5s">
-            <h1>Currently Learning / Personal Projects</h1>
+      <section id ="personal-section" className="projects-section">
+         <div class="container wow fadeIn slow" data-wow-delay=".5s">
+            <h1 class="projects-section__title">Currently Learning / Personal Projects</h1>
+            <h2 class="projects-section__subTitle">React Native / WebScrape / Typescript</h2>
             <div class="projects-container">
-               <div class="project" >
+               <div class="project" onclick="location.href='/truckingBuddyApp.html'">
                   <div class="project__imgContainer">
-                     <img className="project__img" src = "./img/tictactoe/main.png" alt="picture of logistics app"/>
+                     <img class="project__img project__img--personal" src = "./img/tictactoe/main.png" alt="picture of logistics app"/>
                   </div>
-                  <div class="details">
+                  <div class="project__details">
                      <h2 class="project__details__title">Tic-Tac-Toe</h2>
                      <p class="project__details__paragraph">You can choose from a variety of characters and keep score of the games.</p>
                   </div>
-                  <a href ="/truckingBuddyApp.html">
-                     <div class="hover-over"><img src="./img/boy.svg" alt="user hover over"></div>
-                  </a>
                </div>
-               <!-- <iframe src="https://appetize.io/embed/wzb9b1ykuqbbt1hxvur6vyqzvg?device=iphone8&scale=75&autoplay=true&orientation=portrait&deviceColor=white" width="312px" height="653px" frameborder="0" scrolling="no"></iframe>             -->
+
             </div>
          </div>
       </section>
       <section id ="about">
          <div class="about-section-container container">
-            <h1>About</h1>
-            <div class ="about-section wow fadeInUp slow">
-               <div class="info">
-                  <p>Hi, if your here you want to know a little of my background...</p>
+            <h1 class="about-section-container__title">About</h1>
+            <div class ="about wow fadeInUp slow">
+               <div class="about__info">
+                  <p class="about__info-paragraph">Hi, if your here you want to know a little of my background...</p>
                   <br>
                   <p>I actually started long ago, when I was 13 years old. No knowledge of actual coding, just using Dreamweaver and Frontpage98 I built some sites and I even started generating add revenue from banner adds. But life as a kid got in the way and I stopped when I entered High School.</p>
                   <br>
@@ -156,30 +154,29 @@
             </div>
          </div>
       </section>
-      <section id ="contact">
-         <div class="contact-section-container container">
-            <h1>Contact</h1>
-            <div class="contact-container">
-               <div class="contact wow rubberBand slow" data-wow-delay=".7s">
-                  <h2>Email: rigo.webdev@gmail.com</h2>
-                  <h2>Phone: 530-628-7690</h2>
+      <section id ="contact" class="contact-section">
+         <div class="contact-section__container container">
+            <h1 class="contact-section__title">Contact</h1>
+            <div class="contact">
+               <div class="contact__container wow rubberBand slow" data-wow-delay=".7s">
+                  <h2 class="contact__h2">Email: rigo.webdev@gmail.com</h2>
+                  <h2 class="contact__h2">Phone: 530-628-7690</h2>
                </div>
-               <div class="icons">
-                  <a href="https://github.com/RigoDeLaTorre"><img src="./img/logos/github-sign.svg" alt="github"></a>
-                  <a href="https://www.linkedin.com/in/rigodlt/"><img src="./img/logos/linkedin.svg" alt="linkedin"></a>
-                  <a href="mailto:rigo.webdev@gmail.com"><img src="./img/logos/email.svg" alt="email"></a>
+               <div class="contact__iconContainer">
+                  <a href="https://github.com/RigoDeLaTorre"><img class="contact__icon" src="./img/logos/github-sign.svg" alt="github"></a>
+                  <a href="https://www.linkedin.com/in/rigodlt/"><img class="contact__icon" src="./img/logos/linkedin.svg" alt="linkedin"></a>
+                  <a href="mailto:rigo.webdev@gmail.com"><img class="contact__icon" src="./img/logos/email.svg" alt="email"></a>
                </div>
             </div>
          </div>
       </section>
-      <!-- <section class="iphone-app">
-         <iframe src="https://appetize.io/embed/xpmtyrfzgzcxtmd21jgjnp5q7r?device=iphone8&scale=100&autoplay=false&orientation=portrait&deviceColor=black" width="400px" height="800px" frameborder="0" scrolling="no"></iframe>
-         </section> -->
+      <!-- <iframe src="https://appetize.io/embed/wzb9b1ykuqbbt1hxvur6vyqzvg?device=iphone8&scale=75&autoplay=true&orientation=portrait&deviceColor=white" width="312px" height="653px" frameborder="0" scrolling="no"></iframe>             -->
+
       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
       <script src="js/wow.min.js"></script>
       <script>
       new WOW().init()
 var scroll = new SmoothScroll('a[href*="#"]')
-pt>
+</script>
    </body>
 </html>
