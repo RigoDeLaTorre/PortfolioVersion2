@@ -1,20 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-@import 'reset';
-@import 'variables';
-@import './3-layout/3-layout';
-@import './4-modules/4-modules';
-* {
-	box-sizing: border-box;
-}
-body {
-	font-family: 'Roboto', sans-serif;
-	color: #000000;
-}
-.container {
-	max-width: 1400px;
-	margin: 0 auto;
-	padding: 5rem 0;
-}
+@import '1-helpers/1-helpers';
+@import '0-plugins/0-plugins';
+@import '2-base/2-base';
+@import '3-layout/3-layout';
+@import '4-modules/4-modules';
+@import '5-templates/5-templates';
+
+
 
 #home {
 	background: #001433;
@@ -352,112 +343,6 @@ body {
 							background: #ff9a20;
 							color: white;
 							transition: $transition;
-						}
-					}
-				}
-			}
-		}
-	}
-}
-
-#project-tech {
-	background: #f2eeee;
-	color: #373a3c;
-	@media only screen and (max-width: 1100px) {
-		.project-tech {
-			display: block !important;
-		}
-		.project-tech-container {
-			h1 {
-				font-size: 1.5rem !important;
-			}
-		}
-		.description {
-			margin-top: 5rem !important;
-		}
-		.group-skills-used {
-			width: 150px !important;
-			font-size: 0.9rem !important;
-		}
-	}
-
-	.project-tech-container {
-		padding: 5rem 0;
-		max-width: 60%;
-		margin: 0 auto;
-
-		h1 {
-			font-size: 2rem;
-			font-weight: 300;
-			display: inline;
-			padding: 10px 0;
-			border-bottom: 1px solid black;
-			color: black;
-		}
-
-		.project-tech {
-			margin-top: 2rem;
-			display: flex;
-			justify-content: center;
-
-			.image-section {
-				flex: 1;
-
-				img {
-					width: 100%;
-					box-shadow: $boxshadow;
-					border-radius: 3px;
-				}
-				.more-details {
-					margin-top: 2rem;
-
-					a {
-						text-decoration: none;
-						padding: 10px 20px;
-						background: transparent;
-						border: 1px solid #424f58;
-						font-weight: 500;
-						font-size: 1rem;
-						color: #424f58;
-						cursor: pointer;
-						&:hover {
-							background: #ff9a20;
-							color: white;
-							transition: $transition;
-						}
-					}
-				}
-			}
-
-			.description {
-				flex: 2;
-				line-height: 1.5;
-				display: flex;
-				justify-content: center;
-				ul {
-					display: grid;
-					grid-template-columns: 1fr 1fr;
-					grid-gap: 10px;
-					.group-skills-used {
-						display: flex;
-						flex-direction: row;
-						align-items: center;
-						justify-content: space-between;
-						height: 40px;
-						width: 200px;
-
-						font-size: 1rem;
-						font-weight: 300;
-						padding: 5px 20px;
-						color: #05152d;
-						border: none;
-						border-bottom: 1px solid #0f6cf8;
-						background: white;
-						border-radius: 2px;
-						li {
-						}
-						img {
-							width: 30px;
 						}
 					}
 				}
