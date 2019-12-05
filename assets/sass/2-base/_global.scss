@@ -1,30 +1,31 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  color: #000000;
+	font-family: 'Roboto', sans-serif;
+	color: #000000;
 }
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 5rem 0;
-}
+
 .copyemailButton {
-  margin-left: 1rem;
-  padding: 5px 32px;
-  background: black;
-  color: #f69b25;
-  border-radius: 3px;
-  cursor: pointer;
-  &:hover {
-    background: white;
-    color: black;
-  }
-  @media only screen and (max-width: 600px) {
-    text-align: center;
-    display: block;
-    margin-left: 0;
-  }
+	margin-left: 1rem;
+	padding: 5px 32px;
+	background: black;
+	color: #f69b25;
+	border-radius: 3px;
+	cursor: pointer;
+	&:hover {
+		background: white;
+		color: black;
+	}
+	@media only screen and (max-width: 600px) {
+		text-align: center;
+		display: block;
+		margin-left: 0;
+	}
+}
+nav {
+	li {
+		text-transform: uppercase;
+	}
 }

@@ -1,3 +1,13 @@
-@import "reset";
+@import 'reset';
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
-@import "global";
+@import 'global';
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 5rem 0;
+	&__flex {
+		display: flex;
+		justify-content: center;
+	}
+}

@@ -35,17 +35,24 @@
         </ul>
       </nav>
     </section>
+
+
+
     <section id="project-details">
-      <div class="project-details__title">
-        <a
-          class="project-details__link"
-          href="https://simpletrucker.herokuapp.com/"
-          target="_blank"
-          >Simple Trucker</a
-        >
-      </div>
+      <div class="container">
+
       <div class="project-details-container">
+        <div class="project-details__title">
+          <a
+            class="project-details__link"
+            href="https://simpletrucker.herokuapp.com/"
+            target="_blank"
+            >Simple Trucker</a
+          >
+        </div>
+
         <h1 class="project-details-container__h1">Overview</h1>
+
         <div class="project-container">
           <div class="project-details__descriptionContainer wow fadeIn slow">
             <p class="project-details__description">
@@ -55,7 +62,7 @@
             </p>
             <br />
             <p class="project-details__description">
-              Interact with my demo account...<br />Login Information:<br /><br />E-mail:
+              Demo : Login Information:<br /><br />E-mail:
               rigo.webdev@gmail.com
               <span
                 id="copy-button"
@@ -65,18 +72,10 @@
               ><br />Pass:123456
             </p>
 
-            <br />
-            <br />
           </div>
-          <div class="project-details__imgSection wow fadeIn slower">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/kLyBJqyRyAg"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media;"
-              allowfullscreen
-            ></iframe>
+
+         <div class="project-details__imgSection wow fadeIn slower">
+
 
             <!-- <a href="https://simpletrucker.herokuapp.com/" target="_blank"
               ><img
@@ -93,7 +92,31 @@
             </div>
           </div>
         </div>
+
       </div>
+
+    </div>
+    </section>
+
+    <section class="container container__flex wow fadeIn slower projectImages">
+      <img class="projectImages__desktop"src="/img/simpleTrucker/simpleTruckerDesktop.png" alt="">
+      <img class="projectImages__mobile projectImages__mobile--video" src="/img/simpleTrucker/simpleTruckerMobile.png"
+       alt="">
+
+       <iframe
+         width="560"
+         height="315"
+         src="https://www.youtube.com/embed/kLyBJqyRyAg"
+         frameborder="0"
+         allow="accelerometer; autoplay; encrypted-media;"
+         allowfullscreen
+       ></iframe>
+    
+    </section>
+
+
+    <section>
+
     </section>
 
     <section id="project-tech">
@@ -253,22 +276,22 @@
     </section>
     <script src="js/wow.min.js"></script>
     <script>
-      new WOW().init();
-      copyEmail = () => {
-        const el = document.createElement("textarea");
-        el.value = "rigo.webdev@gmail.com";
-        document.body.appendChild(el);
-        el.select();
-        document.execCommand("copy");
-        document.body.removeChild(el);
+    new WOW().init()
+copyEmail = () => {
+	const el = document.createElement('textarea')
+	el.value = 'rigo.webdev@gmail.com'
+	document.body.appendChild(el)
+	el.select()
+	document.execCommand('copy')
+	document.body.removeChild(el)
 
-        let copyButton = document.getElementById("copy-button");
-        copyButton.innerText = "Copied !";
+	let copyButton = document.getElementById('copy-button')
+	copyButton.innerText = 'Copied !'
 
-        setTimeout(function() {
-          copyButton.innerText = "Copy";
-        }, 700);
-      };
-    </script>
+	setTimeout(function() {
+		copyButton.innerText = 'Copy'
+	}, 700)
+}
+</script>
   </body>
 </html>
